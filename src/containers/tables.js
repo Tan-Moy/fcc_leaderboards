@@ -32,13 +32,18 @@ class Table extends Component{
 
     showData(item){
         // return(item.username)
+        //console.log(item)
+        let url = `https://www.freecodecamp.com/${item.username}`
+        console.log(url)
         return(
             <tr key={item.username}>
                 <td>
-                    <img src={item.img}/>
-                    <span id="username">
-                    {item.username}
-                    </span>
+                    <a href={url} target="_blank">
+                        <img src={item.img}/>
+                        <span id="username">
+                        {item.username}
+                        </span>
+                    </a>
                 </td>
                 <td>{item.recent}</td>
                 <td>{item.alltime}</td>
