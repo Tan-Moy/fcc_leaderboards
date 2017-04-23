@@ -18,11 +18,16 @@ class Table extends Component{
     handleRecentClick(e){
         this.props.recentTop();
         console.log('Sorting by recent');
+        // e.target.className = "box-shadow-inset";
+        document.getElementById('recent').classList.add('box-shadow-inset')
+        document.getElementById('alltime').classList.remove('box-shadow-inset')
     }
 
     handleAlltimeClick(e){
         this.props.alltimeTop();
         console.log('Sorting by alltime');
+        document.getElementById('alltime').classList.add('box-shadow-inset')
+        document.getElementById('recent').classList.remove('box-shadow-inset')
     }
 
     showData(item){
@@ -54,7 +59,7 @@ class Table extends Component{
                 <thead>
                     <tr>
                         <td>Camper</td>
-                        <td onClick={this.handleRecentClick} id="recent">Recent</td>
+                        <td onClick={this.handleRecentClick} id="recent" className="box-shadow-inset">Recent</td>
                         <td onClick={this.handleAlltimeClick} id="alltime">All-Time</td>
                     </tr>
                 </thead>

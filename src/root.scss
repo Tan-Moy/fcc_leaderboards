@@ -4,7 +4,7 @@ body{
 
 .container {
     table {
-        width: 60%;
+        width: 70%;
         margin: 0 auto;
         border-collapse: collapse;
         font-size: 18px;
@@ -24,9 +24,8 @@ thead {
     td{
         padding: .5em;
     }
-    #alltime{
+    #alltime,#recent{
         cursor:pointer;
-        box-shadow: inset 0px 2px 2px black;
     }
 }
 
@@ -56,3 +55,6 @@ tbody {
     }
 }
 
+.box-shadow-inset{
+    box-shadow: inset 1px 1px 3px black;
+}
