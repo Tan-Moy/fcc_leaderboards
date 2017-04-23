@@ -54,8 +54,8 @@ class Table extends Component{
                 <thead>
                     <tr>
                         <td>Camper</td>
-                        <td onClick={this.handleRecentClick}>Recent</td>
-                        <td onClick={this.handleAlltimeClick}>All-Time</td>
+                        <td onClick={this.handleRecentClick} id="recent">Recent</td>
+                        <td onClick={this.handleAlltimeClick} id="alltime">All-Time</td>
                     </tr>
                 </thead>
                 <tbody>
