@@ -53,8 +53,14 @@ class Table extends Component{
 
     render(){
         if(!this.props.data){
-            return <div>
-                loading...
+            return <div className="container">
+                <table>
+                    <thead>
+                        <tr>
+                            <td id="spinner">Loading..</td>
+                        </tr>
+                    </thead>
+                </table>
             </div>
         }
 
