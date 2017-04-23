@@ -1,7 +1,39 @@
-body{
-    background-color: pink;
-    p{
-        color: blue;
+.container {
+    table {
+        width: 60%;
+        margin: 0 auto;
+        border-collapse: collapse;
+    }
+}
+
+thead {
+    text-align: left;
+    background-color: #393939;
+    color: white;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+tbody {
+    td {
+        #username{
+            color:cyan;
+        }
+        img {
+            width: 2em;
+            height: auto;
+            margin-right:0.5em;
+            border: 1px solid cyan;
+            vertical-align: middle;
+        }
+    }
+    tr:nth-child(even) {
+        background-color: #393939;
+        color:#2F8116;
+    }
+    tr:nth-child(odd) {
+        background-color: #333333;
+        color:#2F8116;
     }
 }
 
